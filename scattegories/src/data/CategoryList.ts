@@ -159,7 +159,6 @@ export const CategoryList = [
   'Notorious People',
   'Nouns',
   'Occupations',
-  'Offensive words',
   'Old-Fashioned Boy’s Name',
   'Old-Fashioned Girl’s Name',
   'Olympic Events',
