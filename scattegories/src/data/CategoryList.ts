@@ -305,8 +305,6 @@ export const CategoryList = [
   'Things to do at a Party',
   'Things to do on a Date',
   'Things Used By a Bodybuilder',
-  'Things With Spots',
-  'Things With Stripes',
   'Things With Tails',
   'Things Worn From the Waist Up',
   'Things You Buy for Kids',
