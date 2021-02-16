@@ -1,0 +1,47 @@
+$base-font-size: 10px;
+
+.categories {
+  border-radius: 4px 8px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  font-size: $base-font-size;
+}
+
+.flipper {
+  height: 100%;
+  transition: 0.4s;
+  transform-style: preserve-3d;
+
+  .front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    text-align: center;
+    font-size: 48px;
+  }
+
+  .back {
+    transform: rotateY(180deg);
+  }
+
+  &.flipped {
+    transform: rotateY(180deg);
+  }
+}
+
+@media (min-height: 200px) and (min-width: 200px) {  .categories { font-size: $base-font-size + 1; } }
+@media (min-height: 300px) and (min-width: 300px) {  .categories { font-size: $base-font-size + 2; } }
+@media (min-height: 400px) and (min-width: 400px) {  .categories { font-size: $base-font-size + 3; } }
+@media (min-height: 500px) and (min-width: 500px) {  .categories { font-size: $base-font-size + 5; } }
+@media (min-height: 600px) and (min-width: 600px) {  .categories { font-size: $base-font-size + 8; } }
+@media (min-height: 700px) and (min-width: 700px) {  .categories { font-size: $base-font-size + 11; } }
+@media (min-height: 800px) and (min-width: 800px) {  .categories { font-size: $base-font-size + 14; } }
+@media (min-height: 900px) and (min-width: 900px) {  .categories { font-size: $base-font-size + 22; } }
+@media (min-height: 1000px) and (min-width: 1000px) {  .categories { font-size: $base-font-size + 28; } }

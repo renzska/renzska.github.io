@@ -1,0 +1,19 @@
+.category {
+  display: flex;
+  border-bottom: 4px dotted #DDD;
+  align-items: center;
+
+  .category-number {
+    font-size: 0.7em;
+    font-weight: 600;
+    width: 35px;
+    text-align: right;
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: 5px solid #DDD;
+  }
+
+  .category-name {
+    font-weight: 500;
+  }
+}

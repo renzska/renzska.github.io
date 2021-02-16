@@ -1,0 +1,48 @@
+.settings-wrapper {
+  .settings-button {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    cursor: pointer;
+  }
+
+  .settings {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    background: #FFF;
+    transition: all ease-out 0.1s;
+    display: flex;
+    opacity: 0;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    font-size: 54px;
+
+    &.visible {
+      width: 100vw;
+      height: 100vh;
+      transition: all ease-out 0.1s;
+      padding: 10%;
+      opacity: 1;
+    }
+
+    .setting {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+
+      .setting-name {
+        margin-right: 15px;
+      }
+
+      .setting-value {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
